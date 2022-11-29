@@ -1,3 +1,7 @@
+# References:
+# https://www.kaggle.com/code/meaninglesslives/unet-xception-keras-for-pneumothorax-segmentation/notebook
+# https://github.com/nikhilroxtomar/Polyp-Segmentation-using-UNET-in-TensorFlow-2.0/blob/master/train.py
+
 import skimage.io as io
 import skimage.transform as trans
 import numpy as np
@@ -43,7 +47,7 @@ def log_cosh_dice_loss(y_true, y_pred):
     x = dice_loss(y_true, y_pred)
     return tf.math.log((tf.exp(x) + tf.exp(-x)) / 2.0)
 
-#https://github.com/nikhilroxtomar/Polyp-Segmentation-using-UNET-in-TensorFlow-2.0/blob/master/train.py
+
 def iou(y_true, y_pred):
     def f(y_true, y_pred):
         intersection = (y_true * y_pred).sum()
