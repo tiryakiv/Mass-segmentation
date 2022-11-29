@@ -1,3 +1,7 @@
+# Reference 
+# https://github.com/nikhilroxtomar/Polyp-Segmentation-using-UNET-in-TensorFlow-2.0/blob/master/train.py
+# https://idiotdeveloper.com/vgg16-unet-implementation-in-tensorflow/
+
 import numpy as np 
 from tensorflow.keras.models import *
 from tensorflow.keras.layers import *
@@ -42,7 +46,6 @@ def log_cosh_dice_loss(y_true, y_pred):
     x = dice_loss(y_true, y_pred)
     return tf.math.log((tf.exp(x) + tf.exp(-x)) / 2.0)
 
-#https://github.com/nikhilroxtomar/Polyp-Segmentation-using-UNET-in-TensorFlow-2.0/blob/master/train.py
 def iou(y_true, y_pred):
     def f(y_true, y_pred):
         intersection = (y_true * y_pred).sum()
