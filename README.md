@@ -10,8 +10,7 @@ The references for models are given in the top line as a comment.
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
-* Miniconda3 Python 3.9
-* cuda_11.8.0_522.06_windows
+* Python 3.9 - 64 bit (Miniconda3)
 * Tensorflow 2.10
 * Keras 2.6
 * cudatoolkit 11.2.2
