@@ -26,7 +26,7 @@ Mass segmentation test code:
 Mass classification train-valid-test codes:
 * mass_class_inceptionv3_xval_28nov22.ipynb
 * mass_class_resnet50v2_xval_28nov22.ipynb
-* 
+* mass_class_vgg16_xval_28nov22.ipynb
 
 The references for models are given in the top line as a comment.
 
