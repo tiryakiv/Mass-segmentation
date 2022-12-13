@@ -28,8 +28,9 @@ Mass classification train-valid-test codes:
 * mass_class_resnet50v2_xval_28nov22.ipynb
 * mass_class_vgg16_xval_28nov22.ipynb
 
-Data codes start with data and followed by channel number.
-Deep learning model codes start with model and followed by the model name. The references for models are given in the top line as a comment.
+Data codes start with data and followed by channel number. Mass segmentation data file is set for 640x640 mammogram size. Breast segmentation data file is set for 1024x768 size.
+
+Deep learning model codes start with model and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
@@ -38,3 +39,9 @@ Deep learning model codes start with model and followed by the model name. The r
 * Keras 2.6
 * cudatoolkit 11.2.2
 * cudnn 8.1.0.77
+
+## Hardware configuration
+* Dell WS T7610
+* Intel Xeon E5-2630 2.6 GHz CPU
+* GeForce RTX3060
+* 16 GB RAM
