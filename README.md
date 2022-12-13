@@ -33,40 +33,43 @@ Data codes start with data and followed by channel number. Mass segmentation dat
 Deep learning model codes start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
 
 ## Example training validation testing folder organization:
-mass_seg_08
-* test
-* * mg
-* * mask
-* train01
-* * mg
-* * mask
-* train02
-* * mg
-* * mask
-* train03
-* * mg
-* * mask
-* train04
-* * mg
-* * mask
-* train05
-* * mg
-* * mask
-* valid01
-* * mg
-* * mask
-* valid02
-* * mg
-* * mask
-* valid03
-* * mg
-* * mask
-* valid04
-* * mg
-* * mask
-* valid05
-* * mg
-* * mask
+```bash
+├── mass_seg_08
+│   ├── test
+│   │   ├── mg
+│   │   ├── mask
+│   ├── train01
+│   │   ├── mg
+│   │   ├── mask
+│   ├── train02
+│   │   ├── mg
+│   │   ├── mask
+│   ├── train03
+│   │   ├── mg
+│   │   ├── mask
+│   ├── train04
+│   │   ├── mg
+│   │   ├── mask
+│   ├── train05
+│   │   ├── mg
+│   │   ├── mask
+│   ├── valid01
+│   │   ├── mg
+│   │   ├── mask
+│   ├── valid02
+│   │   ├── mg
+│   │   ├── mask
+│   ├── valid03
+│   │   ├── mg
+│   │   ├── mask
+│   ├── valid04
+│   │   ├── mg
+│   │   ├── mask
+│   ├── valid05
+│   │   ├── mg
+│   │   ├── mask
+```
+
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
