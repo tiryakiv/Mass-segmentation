@@ -38,6 +38,7 @@ Deep learning model codes start with "model" and followed by the model name. The
 │   ├── test
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 │   ├── train01
 │   │   ├── mg
 │   │   ├── mask
