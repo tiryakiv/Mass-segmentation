@@ -28,7 +28,8 @@ Mass classification train-valid-test codes:
 * mass_class_resnet50v2_xval_28nov22.ipynb
 * mass_class_vgg16_xval_28nov22.ipynb
 
-The references for models are given in the top line as a comment.
+Data codes start with data and followed by channel number.
+Deep learning model codes start with model and followed by the model name. The references for models are given in the top line as a comment.
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
