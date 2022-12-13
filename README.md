@@ -56,18 +56,23 @@ Deep learning model codes start with "model" and followed by the model name. The
 │   ├── valid01
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 │   ├── valid02
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 │   ├── valid03
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 │   ├── valid04
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 │   ├── valid05
 │   │   ├── mg
 │   │   ├── mask
+│   │   ├── pred
 ```
 
 
