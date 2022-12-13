@@ -34,18 +34,39 @@ Deep learning model codes start with model and followed by the model name. The r
 
 The training validation testing folder organization:
 mass_seg_08
- * test
- * * 
-  train01
-  train02
-  train03
-  train04
-  train05
-  valid01
-  valid02
-  valid03
-  valid04
-  valid05
+* test
+* * mg
+* * mask
+* train01
+* * mg
+* * mask
+* train02
+* * mg
+* * mask
+* train03
+* * mg
+* * mask
+* train04
+* * mg
+* * mask
+* train05
+* * mg
+* * mask
+* valid01
+* * mg
+* * mask
+* valid02
+* * mg
+* * mask
+* valid03
+* * mg
+* * mask
+* valid04
+* * mg
+* * mask
+* valid05
+* * mg
+* * mask
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
