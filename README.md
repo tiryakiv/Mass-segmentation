@@ -6,6 +6,16 @@ In the first step five-layer U-net was found to have the hightest breast segment
 
 In the second step U-net++Xception had the highest mass segmentation performance. The proposed U-net++Xception model has statistically siginificant better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
+Breast segmentation training and validation codes:
+
+
+Mass segmentation training and validation codes:
+
+Mass segmentation test codes:
+
+Mass classification train-valid-test codes:
+
+
 The references for models are given in the top line as a comment.
 
 ## Software configuration:
