@@ -30,9 +30,9 @@ Mass classification train-valid-test codes:
 
 Data codes start with data and followed by channel number. Mass segmentation data file is set for 640x640 mammogram size. Breast segmentation data file is set for 1024x768 size.
 
-Deep learning model codes start with model and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
+Deep learning model codes start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
 
-The training validation testing folder organization:
+## Example training validation testing folder organization:
 mass_seg_08
 * test
 * * mg
