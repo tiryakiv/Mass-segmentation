@@ -2,9 +2,9 @@
 
 This repository includes mass segmentation investigation using U-net++Xception-based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation.
 
-In the first step five-layer U-net was found to have the hightest breast segmentation performance.
+In the first step, the five-layer U-net was found to have the hightest breast segmentation performance.
 
-In the second step U-net++Xception had the highest mass segmentation performance. The proposed U-net++Xception model has statistically siginificant better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
+In the second step, the U-net++Xception had the highest mass segmentation performance. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
 Breast segmentation training and validation codes:
 * train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
@@ -32,6 +32,20 @@ Data codes start with data and followed by channel number. Mass segmentation dat
 
 Deep learning model codes start with model and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
 
+Here is the training validation testing folder organization:
+mass_seg_08
+  test
+  train01
+  train02
+  train03
+  train04
+  train05
+  valid01
+  valid02
+  valid03
+  valid04
+  valid05
+
 ## Software configuration:
 * Windows 10 Pro - 64 bit
 * Python 3.9 - 64 bit (Miniconda3)
@@ -40,7 +54,7 @@ Deep learning model codes start with model and followed by the model name. The r
 * cudatoolkit 11.2.2
 * cudnn 8.1.0.77
 
-## Hardware configuration
+## Hardware configuration:
 * Dell WS T7610
 * Intel Xeon E5-2630 2.6 GHz CPU
 * GeForce RTX3060
