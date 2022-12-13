@@ -24,8 +24,9 @@ Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
 Mass classification train-valid-test codes:
-
-
+* mass_class_inceptionv3_xval_28nov22.ipynb
+* 
+* 
 
 The references for models are given in the top line as a comment.
 
