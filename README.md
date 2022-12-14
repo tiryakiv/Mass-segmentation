@@ -28,11 +28,11 @@ Mass classification train-valid-test codes:
 * mass_class_resnet50v2_xval_28nov22.ipynb
 * mass_class_vgg16_xval_28nov22.ipynb
 
-Data codes start with data and followed by channel number. Mass segmentation data file is set for 640x640 mammogram size. Breast segmentation data file is set for 1024x768 size.
+Data code names start with data and followed by channel number. Mass segmentation data file is set for 640x640 mammogram size. Breast segmentation data file is set for 1024x768 size.
 
-Deep learning model codes start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
+Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and fairness to compare the models.
 
-## Example training validation testing folder hierarchy for five-fold cross-validation:
+## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation:
 ```bash
 ├── mass_seg_08
 │   ├── test
@@ -79,14 +79,15 @@ Deep learning model codes start with "model" and followed by the model name. The
 
 ## Software configuration:
 * Windows 10 Pro - 64 bit
-* Python 3.9 - 64 bit (Miniconda3)
+* Python 3.9 - 64 bit (Miniconda3 package)
 * Tensorflow 2.10
 * Keras 2.6
 * cudatoolkit 11.2.2
 * cudnn 8.1.0.77
+* ipykernel
 
 ## Hardware configuration:
 * Dell WS T7610
 * Intel Xeon E5-2630 2.6 GHz CPU
-* GeForce RTX3060
+* GeForce RTX3060 12GB GPU
 * 16 GB RAM
