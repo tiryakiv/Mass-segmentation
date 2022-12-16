@@ -1,8 +1,8 @@
 # Mass-segmentation and classification from film mammograms
 
-This repository includes mass segmentation investigation using U-net++Xception-based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation.
+This repository includes mass segmentation investigation using the proposed U-net++Xception and other U-net based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task.
 
-In the first step, the five-layer U-net was found to have the hightest breast segmentation performance.
+In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
 
 In the second step, the U-net++Xception had the highest mass segmentation performance. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
