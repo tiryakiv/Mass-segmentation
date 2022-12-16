@@ -28,8 +28,7 @@ Mass classification train-valid-test codes:
 * mass_class_resnet50v2_xval_28nov22.ipynb
 * mass_class_vgg16_xval_28nov22.ipynb
 
-Data code names start with data and followed by channel number. Mass segmentation data file is set for 640x640 mammogram size. Breast segmentation data file is set for 1024x768 size.
-
+Data code names start with data and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
 
 Mass segmentation test performance of all 60 mammograms in terms of Dice's similarity coefficient are given in: test_mass_seg_predictions_16dec22.ipynb
