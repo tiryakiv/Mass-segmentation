@@ -43,7 +43,7 @@ def adjustData(img,mask,flag_multi_class,num_class):
 
 def trainGenerator(batch_size,train_path,image_folder,mask_folder,aug_dict,image_color_mode = "grayscale",
                     mask_color_mode = "grayscale",image_save_prefix  = "image",mask_save_prefix  = "mask",
-                    flag_multi_class = False,num_class = 1,save_to_dir = None,target_size = (640,640),seed = 42):
+                    flag_multi_class = False,num_class = 1,save_to_dir = None,target_size = (1024,768),seed = 42):
     '''
     can generate image and mask at the same time
     use the same seed for image_datagen and mask_datagen to ensure the transformation for image and mask is the same
@@ -78,7 +78,7 @@ def trainGenerator(batch_size,train_path,image_folder,mask_folder,aug_dict,image
 
 
 
-def testGenerator(test_path,num_image = 300,target_size = (640,640,1),flag_multi_class = False,as_gray = True):
+def testGenerator(test_path,num_image = 300,target_size = (1024,768,1),flag_multi_class = False,as_gray = True):
     for i in range(num_image):
         img = io.imread(os.path.join(test_path,"%d.png"%i),as_gray = as_gray)
         img = img / 255
