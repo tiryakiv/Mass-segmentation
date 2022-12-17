@@ -1,10 +1,14 @@
 # Mass-segmentation and classification from film mammograms
 
-This repository includes mass segmentation investigation using the proposed U-net++Xception and other U-net based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task.
+This repository includes mass segmentation investigation using the proposed U-net++Xception and other U-net based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task. Finally, the mass segmentation predictions were classified as benign versus malignant.
 
-In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
+In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
 
-In the second step, the mass segmentation performances of the proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
+After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640.
+
+In the second step,  the mass segmentation performances of the proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
+
+In the third and final step the mass segmentation model predictions were classied into benign versus malignant. The purpose of this step was use to demonstrate the entire system performance for automated breast cancer diagnosis.
 
 Breast segmentation training and validation codes:
 * train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
