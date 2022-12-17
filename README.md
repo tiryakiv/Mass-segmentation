@@ -24,8 +24,8 @@ Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
 Mass segmentation validation and test performance results in terms of DSC and AUC: 
-* test_mass_seg_predictions_16dec22.ipynb
 * valid_mass_seg_predictions_17dec22.ipynb
+* test_mass_seg_predictions_16dec22.ipynb
 
 Mass classification train-valid-test codes:
 * mass_class_inceptionv3_xval_28nov22.ipynb
