@@ -23,6 +23,10 @@ Mass segmentation training and validation codes:
 Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
+Mass segmentation validation and test performance results in terms of DSC and AUC: 
+* test_mass_seg_predictions_16dec22.ipynb
+* valid_mass_seg_predictions_17dec22.ipynb
+
 Mass classification train-valid-test codes:
 * mass_class_inceptionv3_xval_28nov22.ipynb
 * mass_class_resnet50v2_xval_28nov22.ipynb
@@ -33,7 +37,7 @@ Mass classification train-valid-test codes:
 Data code names start with data and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning segmentation model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
 
-Mass segmentation test performance of all 60 mammograms in terms of Dice's similarity coefficient are given in: test_mass_seg_predictions_16dec22.ipynb
+
 
 ## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation:
 ```bash
