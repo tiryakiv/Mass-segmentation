@@ -27,7 +27,7 @@ Mass segmentation validation and test performance results in terms of DSC and AU
 * valid_mass_seg_predictions_17dec22.ipynb
 * test_mass_seg_predictions_16dec22.ipynb
 
-Mass classification train-valid-test codes:
+Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
 * mass_class_inceptionv3_xval_28nov22.ipynb
 * mass_class_resnet50v2_xval_28nov22.ipynb
 * mass_class_vgg16_xval_28nov22.ipynb
@@ -39,7 +39,7 @@ Deep learning model code names start with "model" and followed by the model name
 
 
 
-## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation:
+## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: (For each folder I needed to start the kernel for He normal initialization algorithm.)
 ```bash
 ├── mass_seg_08
 │   ├── test
