@@ -4,7 +4,7 @@ This repository includes mass segmentation investigation using the proposed U-ne
 
 In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
 
-In the second step, the U-net++Xception had the highest mass segmentation performance. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
+In the second step, the mass segmentation performances of the proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
 Breast segmentation training and validation codes:
 * train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
@@ -37,9 +37,10 @@ Mass classification train-valid-test codes, performance results on validation, a
 Data code names start with data and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning segmentation model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
 
+To run the codes yourself, download all of them. Download the mammograms from the BCDR website. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation. 
 
-
-## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: (For each folder I needed to start the kernel for He normal initialization algorithm.)
+## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: 
+(For each folder I needed to start the kernel to initialized the He normal algorithm.)
 ```bash
 ├── mass_seg_08
 │   ├── test
