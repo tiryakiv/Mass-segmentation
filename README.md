@@ -46,7 +46,7 @@ Deep learning model code names start with "model" and followed by the model name
 To run the codes yourself, download all of them. Download the mammograms from the BCDR website. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation codes provided here. 
 
 ## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: 
-(For each folder I needed to start the kernel to initialized the He normal algorithm.)
+(For each folder I needed to re-start the kernel to initialize the He normal algorithm appropriately.)
 ```bash
 ├── mass_seg_08
 │   ├── test
