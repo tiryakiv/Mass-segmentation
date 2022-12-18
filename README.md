@@ -4,7 +4,7 @@ This repository includes mass segmentation investigation using the proposed U-ne
 
 In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
 
-After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640.
+After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640. The downsampling enabled training of large models.
 
 In the second step,  the mass segmentation performances of the proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
