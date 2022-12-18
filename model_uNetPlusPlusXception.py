@@ -1,4 +1,5 @@
 # Reference for U-net++ implementation: https://github.com/hepinghu/Nested-UNet/blob/master/model.py
+# U-net++Xception implementation was performed by Volkan Müjdat TİRYAKİ.
 
 from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, MaxPool2D, Conv2DTranspose, Concatenate, Input, ZeroPadding2D
 from tensorflow.keras.models import Model
