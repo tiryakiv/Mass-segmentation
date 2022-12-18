@@ -29,9 +29,12 @@ Model performance progress files for each model at each epoch are shared under m
 Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
-Mass segmentation validation and test performance results in terms of DSC and AUC: 
+Mass segmentation validation and test performance results of U-net++Xception in terms of DSC and AUC on BCDR mammograms: 
 * valid_mass_seg_predictions_17dec22.ipynb
 * test_mass_seg_predictions_16dec22.ipynb
+
+Mass segmentation test performance of U-net++Xception in terms of DSC and AUC on 170 CBIS-DDSM test mammogram:
+* test_cbis_mass_cc_seg_predictions_18dec22.ipynb
 
 Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
 * mass_class_inceptionv3_xval_28nov22.ipynb
