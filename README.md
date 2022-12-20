@@ -30,7 +30,7 @@ Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
 Mass segmentation validation and test performance results of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on BCDR mammograms: 
-* valid_mass_seg_predictions_17dec22.ipynb
+* valid_mass_seg_predictions_19dec22.ipynb
 * test_mass_seg_predictions_16dec22.ipynb
 
 Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammogram:
