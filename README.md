@@ -1,4 +1,4 @@
-# Mass-segmentation and classification from film mammograms
+# Deep learning for mass segmentation and classification from screen film mammograms
 
 This repository includes breast cancer mass segmentation investigation using the proposed U-net++Xception and other U-net based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task. Finally, the mass segmentation predictions were classified as benign versus malignant.
 
@@ -33,7 +33,7 @@ Mass segmentation validation and test performance results of U-net++Xception (tr
 * valid_mass_seg_predictions_19dec22.ipynb
 * test_mass_seg_predictions_16dec22.ipynb
 
-Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammogram:
+Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammograms:
 * test_cbis_mass_cc_seg_predictions_18dec22.ipynb
 
 Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
