@@ -26,13 +26,13 @@ Mass segmentation training and validation codes:
 
 Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. You can download the Unet++Xception model of cross-validation number 5 from the following link:
 
-
-
-To test the performance of Unet++Xception model download the following mass segmentation test code:
+To test the performance of Unet++Xception model, download the following mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
-Then download the model from the following link and move the model under files_mass_seg.
 
+Then download the model from the following link and move the model to the "files_mass_seg_xval" folder.
 https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
+
+Locate the test input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code.
 
 Mass segmentation validation and test performance results of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on BCDR mammograms: 
 * valid_mass_seg_predictions_19dec22.ipynb
