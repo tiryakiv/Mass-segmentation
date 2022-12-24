@@ -24,7 +24,9 @@ Mass segmentation training and validation codes:
 * train_valid_uXception_mass_seg08_9nov22_v006.ipynb
 * train_valid_unet5L_mass_seg08_7nov22_v001.ipynb
 
-Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. 
+Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. You can download the Unet++Xception model of cross-validation number 5 from the following link:
+
+https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
 
 Mass segmentation test code:
 * test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
@@ -46,7 +48,7 @@ Mass classification train-valid-test codes, performance results on validation, a
 Data code names start with 'data' and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning segmentation model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
 
-To run the codes yourself, download all of them. Download the mammograms from the BCDR website: https://bcdr.eu/ , and downsample the mammograms and distribute the mammograms to train, valid, and test folders. One folder hiearchy is shown below for mass segmentation. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation codes provided here. 
+To run the codes yourself, download all of them. Download the mammograms from the BCDR website: https://bcdr.eu/ , and downsample the mammograms and distribute the mammograms to train, valid, and test folders. The patient ids of each folder is provided in the supplementary materials document. Folder hiearchy for mass segmentation is shown. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation codes provided here. 
 
 ## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: 
 (mg, mask, pred folders denote mammogram, ground truth mask, and prediction folders respectively. For each folder, I needed to re-start the kernel to initialize the He normal algorithm appropriately.)
