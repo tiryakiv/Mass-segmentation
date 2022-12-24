@@ -46,7 +46,7 @@ Mass classification train-valid-test codes, performance results on validation, a
 Data code names start with 'data' and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment. Deep learning segmentation model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
 
-To run the codes yourself, download all of them. Download the mammograms from the BCDR website. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation codes provided here. 
+To run the codes yourself, download all of them. Download the mammograms from the BCDR website: https://bcdr.eu/ , and downsample the mammograms and distribute the mammograms to train, valid, and test folders. One folder hiearchy is shown below for mass segmentation. Apply the breast segmentation, automatic removal and downsampling, and mass segmentation codes provided here. 
 
 ## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: 
 (mg, mask, pred folders denote mammogram, ground truth mask, and prediction folders respectively. For each folder, I needed to re-start the kernel to initialize the He normal algorithm appropriately.)
