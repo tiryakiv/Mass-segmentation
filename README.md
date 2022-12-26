@@ -32,7 +32,7 @@ To test the performance of Unet++Xception model, download the following mass seg
 Then download the model from the following link and move the model to the "files_mass_seg_xval" folder.
 https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
 
-Locate the test input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code.
+Locate the test input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code. Note that the input mammograms should be 640x640 resolution.
 
 Mass segmentation validation and test performance results of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on BCDR mammograms: 
 * valid_mass_seg_predictions_19dec22.ipynb
