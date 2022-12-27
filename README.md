@@ -104,8 +104,7 @@ To run the codes yourself, download all of them. Download the mammograms from th
 * Python 3.9 - 64 bit (Miniconda3 package)
 * Tensorflow 2.10
 * Keras 2.6
-* cudatoolkit 11.2.2
-* cudnn 8.1.0.77
+* CUDA version 11.8; Driver Version: 522.06, cudatoolkit 11.2.2; cudnn 8.1.0.77
 * ipykernel
 
 ## Hardware configuration:
