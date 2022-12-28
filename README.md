@@ -1,17 +1,15 @@
-# Deep learning for mass segmentation and classification from screen film mammograms
+# Deep transfer learning for mass segmentation and classification from screen film mammograms
 
-This repository includes breast cancer mass segmentation investigation using the proposed U-net++Xception and other U-net based segmentation models. The first step includes a breast segmentation and the second step includes the mass segmentation. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task. Finally, the mass segmentation predictions were classified as benign versus malignant.
+This repository includes breast cancer mass segmentation investigation using U-net++Xception and other U-net based segmentation models. The first and second steps involve breast segmentation and mass segmentation respectively. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task in breast cancer diagnosis. Finally, in the third step, the mass segmentation predictions were classified as benign versus malignant.
 
-In the first step, the five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated.
-
-After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640. The downsampling enabled training of large models.
-
-In the second step,  the mass segmentation performances of the proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
-
-In the third and final step the mass segmentation model predictions were classified into benign versus malignant. The purpose of this step was to demonstrate the entire system performance for automated breast cancer diagnosis.
+The five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated. This step enabled segmentation of breast tissue, ignoring the mammogram background, and deleting the mammogram noise sources. 
 
 Breast segmentation training and validation codes:
 * train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
+
+After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640. The downsampling enabled training of large models.
+
+In the second step,  the mass segmentation performances of the newly proposed U-net++Xception and other recent U-net based nine models were investigated. The proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
 Mass segmentation training and validation codes:
 * train_valid_ResUnet_mass_seg08_14nov22_v011.ipynb
@@ -24,15 +22,7 @@ Mass segmentation training and validation codes:
 * train_valid_uXception_mass_seg08_9nov22_v006.ipynb
 * train_valid_unet5L_mass_seg08_7nov22_v001.ipynb
 
-Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. You can download the Unet++Xception model of cross-validation number 5 from the following link:
-
-To test the performance of Unet++Xception model, download the following mass segmentation test code:
-* test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
-
-Then download the model from the following link and move the model to the "files_mass_seg_xval" folder.
-https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
-
-Locate the test input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code. Note that the input mammograms should be 640x640 resolution.
+Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. 
 
 Mass segmentation validation and test performance results of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on BCDR mammograms: 
 * valid_mass_seg_predictions_19dec22.ipynb
@@ -40,6 +30,16 @@ Mass segmentation validation and test performance results of U-net++Xception (tr
 
 Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammograms:
 * test_cbis_mass_cc_seg_predictions_18dec22.ipynb
+
+To test the performance of Unet++Xception model for mass segmentation, download the following mass segmentation test code:
+* test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
+
+You can download the Unet++Xception model of cross-validation number 5 from the following link:
+https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
+
+Then move the model to the "files_mass_seg_xval" folder.  Locate the test input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code. Note that the input mammograms should have 640x640 resolution.
+
+In the third and final step the mass segmentation model predictions were classified into benign versus malignant. The purpose of this step was to demonstrate the entire system performance for automated breast cancer diagnosis.
 
 Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
 * mass_class_inceptionv3_xval_28nov22.ipynb
