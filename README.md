@@ -4,7 +4,7 @@ This repository includes breast cancer mass segmentation investigation using U-n
 
 The five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated. This step enabled segmentation of breast tissue and discarding the mammogram background. 
 
-# Breast segmentation
+## Breast segmentation
 Breast segmentation training and validation progress can be seen from the following notebook:
 * train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
 
@@ -15,7 +15,7 @@ Run the following codes for 1024x768 mammograms by locating the model and mammog
 
 test_breast_seg_cbis_mass_cc_mg_test_2dec22.ipynb
 
-# Mass segmentation
+## Mass segmentation
 After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640. The downsampling enabled training of large deep transfer learning segmentation models.
 
 In the second step,  the mass segmentation performances of the newly proposed U-net++Xception and other recent U-net based nine models were investigated. The newly proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
@@ -48,7 +48,7 @@ https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=shari
 
 Then move the model to the "files_mass_seg_xval" folder.  Locate your input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code. Note that the input mammograms should have 640x640 resolution.
 
-# Mass classification
+## Mass classification
 In the third and final step the mass segmentation model predictions were classified into benign versus malignant. The purpose of this step was to demonstrate the entire system performance for automated breast cancer diagnosis. Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
 * mass_class_inceptionv3_xval_28nov22.ipynb
 * mass_class_resnet50v2_xval_28nov22.ipynb
