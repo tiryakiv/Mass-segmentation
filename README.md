@@ -22,15 +22,17 @@ After the first step, the mammogram background noise sources were removed, the b
 In the second step,  the mass segmentation performances of the newly proposed U-net++Xception and other recent U-net based nine models were investigated. The newly proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
 Mass segmentation training and validation progress can be seen from the following notebooks:
-* train_valid_ResUnet_mass_seg08_14nov22_v011.ipynb
-* train_valid_basic_AUnet_mass_seg08_18nov22_v017.ipynb
-* train_valid_deepLabV3plus_mass_seg08_17nov22_v015.ipynb
-* train_valid_multiResUnet_mass_seg08_17nov22_v016.ipynb
-* train_valid_uNetPlusPlusXcept_mass_seg08_16nov22_v013.ipynb
-* train_valid_uResNet50_mass_seg08_12nov22_v009.ipynb
-* train_valid_uVGG16_mass_seg08_10nov22_v007.ipynb
-* train_valid_uXception_mass_seg08_9nov22_v006.ipynb
-* train_valid_unet5L_mass_seg08_7nov22_v001.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_ResUnet_mass_seg08_14nov22_v011.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_basic_AUnet_mass_seg08_18nov22_v017.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_deepLabV3plus_mass_seg08_17nov22_v015.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_multiResUnet_mass_seg08_17nov22_v016.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_uNetPlusPlusXcept_mass_seg08_16nov22_v013.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_uResNet50_mass_seg08_12nov22_v009.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_uVGG16_mass_seg08_10nov22_v007.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_uXception_mass_seg08_9nov22_v006.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_unet5L_mass_seg08_7nov22_v001.ipynb
+
 
 Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... progress codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. The purpose of the cross-validation is to see the performance of each model in the entire training dataset.
 
