@@ -43,23 +43,30 @@ https://github.com/tiryakiv/Mass-segmentation/blob/main/valid_mass_seg_predictio
 https://github.com/tiryakiv/Mass-segmentation/blob/main/test_mass_seg_predictions_16dec22.ipynb
 
 Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammograms:
-* test_cbis_mass_cc_seg_predictions_18dec22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/test_cbis_mass_cc_seg_predictions_18dec22.ipynb
 
 To test the performance of Unet++Xception model for mass segmentation on your own mammograms, please download the following mass segmentation test code:
-* test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/test_uNetPlusPlusXcept_mass_seg08_23nov22_v013.ipynb
 
 You can download the Unet++Xception model of cross-validation number 5 from the following link:
+
 https://drive.google.com/file/d/1UGI08AFreky2ArKJJpa93UZB_iFtOmKR/view?usp=sharing
 
 Then move the model to the "files_mass_seg_xval" folder.  Locate your input mammograms under "mass_seg_08/test/pred" folder, and then execute the above code. Note that the input mammograms should have 640x640 resolution.
 
 ## Mass classification
 In the third and final step the mass segmentation model predictions were classified into benign versus malignant. The purpose of this step was to demonstrate the entire system performance for automated breast cancer diagnosis. Mass classification train-valid-test codes, performance results on validation, and test results for VGG16:
-* mass_class_inceptionv3_xval_28nov22.ipynb
-* mass_class_resnet50v2_xval_28nov22.ipynb
-* mass_class_vgg16_xval_28nov22.ipynb
-* mass_class_vgg16_valid_28nov22.ipynb
-* mass_class_vgg16_test_28nov22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/mass_class_inceptionv3_xval_28nov22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/mass_class_resnet50v2_xval_28nov22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/mass_class_vgg16_xval_28nov22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/mass_class_vgg16_valid_28nov22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/mass_class_vgg16_test_28nov22.ipynb
 
 Data code names start with 'data' and followed by channel number. Breast segmentation data file is set at 1024x768 resolution while mass segmentation data file is set at  640x640 resolution. 
 Deep learning model code names start with "model" and followed by the model name. The references for models are given in the top line as a comment and References section of this page. Deep learning segmentation model code names include the date of experiment and followed by version number. Version number is required to distinguish between models. Batch size is two due to the memory limit and to establish fairness for comparing models' performance.
