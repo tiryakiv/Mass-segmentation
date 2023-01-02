@@ -37,8 +37,10 @@ https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_unet5L_mass_
 Model performance progress files for each model at each epoch are shared under model_performance folder. Each file starts with 'data' (as given in the above train_valid... progress codes) and continue with the model number and followed by cross-validation fold number. For example, 'data_v013_2' is the performance file for model 13, which is U-net++Xception, and cross-validation fold number is 2. You can see the model number and model type correspondence from the 'train_valid' codes given above. The purpose of the cross-validation is to see the performance of each model in the entire training dataset.
 
 Mass segmentation validation and test performance results of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on BCDR mammograms can be seen from these notebooks: 
-* valid_mass_seg_predictions_19dec22.ipynb
-* test_mass_seg_predictions_16dec22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/valid_mass_seg_predictions_19dec22.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/test_mass_seg_predictions_16dec22.ipynb
 
 Mass segmentation test performance of U-net++Xception (trained with BCDR as explained in the manuscript) in terms of DSC and AUC on 170 CBIS-DDSM test mammograms:
 * test_cbis_mass_cc_seg_predictions_18dec22.ipynb
