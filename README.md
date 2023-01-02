@@ -21,7 +21,7 @@ After the first step, the mammogram background noise sources were removed, the b
 
 In the second step,  the mass segmentation performances of the newly proposed U-net++Xception and other recent U-net based nine models were investigated. The newly proposed U-net++Xception model has better performance than U-net5L, Unet++, ResUnet, DeepLabV3Plus and AttentionU-net in terms of DSC. 
 
-Mass segmentation training and validation progress can be seen from the following notebooks:
+Mass segmentation training and validation progresses can be seen from the following notebooks:
 
 https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_ResUnet_mass_seg08_14nov22_v011.ipynb
 https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_basic_AUnet_mass_seg08_18nov22_v017.ipynb
