@@ -6,7 +6,8 @@ The five-layer U-net was found to have the highest breast segmentation performan
 
 ## Breast segmentation
 Breast segmentation training and validation progress can be seen from the following notebook:
-* train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
+
+https://github.com/tiryakiv/Mass-segmentation/blob/main/train_valid_unet5L_mg_seg04_4nov22_v001.ipynb
 
 To test the breast segmentation model, download the breast segmentation five-layer U-net model from the following link:
 https://drive.google.com/file/d/1r-Qbv4nqxLVIOX09bt7YQKEqN0ArpF_3/view?usp=sharing
