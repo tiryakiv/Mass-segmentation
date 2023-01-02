@@ -13,7 +13,7 @@ https://drive.google.com/file/d/1r-Qbv4nqxLVIOX09bt7YQKEqN0ArpF_3/view?usp=shari
 
 Run the following codes for 1024x768 mammograms by locating the model and mammograms in appropriate folders: (Here example is given for CBIS-DDSM mammograms)
 
-test_breast_seg_cbis_mass_cc_mg_test_2dec22.ipynb
+https://github.com/tiryakiv/Mass-segmentation/blob/main/test_breast_seg_cbis_mass_cc_mg_test_2dec22.ipynb
 
 ## Mass segmentation
 After the first step, the mammogram background noise sources were removed, the blank regions were removed, and mammograms were downsized to 640x640. The downsampling enabled training of large deep transfer learning segmentation models.
