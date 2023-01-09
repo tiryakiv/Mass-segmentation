@@ -155,7 +155,7 @@ The BCDR mammograms can be downloaded from: https://bcdr.eu/.  The CBIS-DDSM mam
 
 [10]	I.C. Moreira, I. Amaral, I. Domingues, A. Cardoso, M.J. Cardoso, J.S. Cardoso, INbreast: Toward a Full-field Digital Mammographic Database, Acad. Radiol. 19 (2012) 236–248. https://doi.org/10.1016/j.acra.2011.09.014.
 
-[11]	BCDR - Breast Cancer Digital Repository, (2012). http://bcdr.inegi.up.pt.
+[11]	BCDR - Breast Cancer Digital Repository, (2012). http://bcdr.inegi.up.pt  or https://bcdr.eu/ 
 
 [12]	D.C. Moura, M.A.G. López, P. Cunha, N.G. de Posada, R.R. Pollan, I. Ramos, J.P. Loureiro, I.C. Moreira, B.M.F. de Araújo, T.C. Fernandes, Benchmarking Datasets for Breast Cancer Computer-Aided Diagnosis (CADx), in: J. Ruiz-Shulcloper, G. di Baja (Eds.), Prog. Pattern Recognition, Image Anal. Comput. Vision, Appl., Springer Berlin Heidelberg, Berlin, Heidelberg, 2013: pp. 326–333.
 
