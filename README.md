@@ -5,7 +5,7 @@ This repository includes breast cancer mass segmentation investigation using U-n
 The five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated. This step enabled segmentation of breast tissue and discarding the mammogram background. 
 
 ## Breast segmentation
-Breast segmentation ground truth masks can be accessed from the mg_seg_labels folder. 
+Breast segmentation ground truth masks can be accessed from the mg_seg_labels folder. You can simply download the rar file, unzip it and you will see 412 binary mask files. The mask file names are the original mammogram names followed by _overlay.
 
 Breast segmentation training and validation progress can be seen from the following notebook:
 
