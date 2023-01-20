@@ -75,7 +75,7 @@ Deep learning model code names start with "model" and followed by the model name
 
 The BCDR mammograms can be downloaded from: https://bcdr.eu/.  The CBIS-DDSM mammograms can be downloaded from https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=22516629. The BCDR train, validation, testing patient ids are provided in the Supplementary Materials document. Folder hiearchy for mass segmentation is shown below. 
 
-## Training, validation, and testing folder hierarchy for mass segmentation five-fold cross-validation: 
+## Folder hierarchy for mass segmentation five-fold cross-validation: 
 (mg, mask, pred folders denote mammogram, ground truth mask, and prediction folders respectively. For each cross-validation fold, I needed to re-start the kernel to initialize the He normal algorithm appropriately.)
 ```bash
 ├── mass_seg_08
