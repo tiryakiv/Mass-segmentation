@@ -1,6 +1,6 @@
 # Deep transfer learning for mass segmentation and classification from screen film mammograms
 
-This repository includes breast cancer mass segmentation investigation using U-net++Xception and other U-net based segmentation models. The first and second steps involve breast segmentation and mass segmentation respectively. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task in breast cancer diagnosis. Finally, in the third step, the mass segmentation predictions were classified as benign versus malignant.
+This repository includes breast cancer mass segmentation investigation using U-net++Xception and other U-net based segmentation models. The first and second steps involve breast segmentation and mass segmentation respectively. The two step enabled to focus only on the mass segmentation in the second step, which is a critical task in breast cancer diagnosis. Finally, in the third step, the mass segmentation predictions were classified as benign versus malignant. The details of the implementations are given in my paper: https://doi.org/10.1016/j.bspc.2023.104819. Please consider citing my work if you find the content useful. 
 
 The five-layer U-net was found to have the highest breast segmentation performance. The mammogram pixel dimensions were 1024x768. The segmentation performance was sufficient and other deep transfer learning methods were not investigated. This step enabled segmentation of breast tissue and discarding the mammogram background. 
 
